@@ -123,6 +123,7 @@ exports.menuTemplate = [
       submenu: [
         {label: 'Open...', id: 'file-open', accelerator: 'CmdOrCtrl+O'},
         {label: 'Print', id:'file-print', accelerator: 'CmdOrCtrl+P', enabled: false},
+        isMac ? { role: 'close', accelerator: 'CmdOrCtrl+W'} : { role: 'quit' }
       ]
     },
     // { role: 'editMenu' }

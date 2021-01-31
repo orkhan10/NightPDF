@@ -60,8 +60,7 @@
 			"category": "public.app-category.productivity",
 			"target": [
 				"dmg",
-				"zip",
-				"mas"
+				"zip"
 			],
 			"bundleVersion": "1",
 			"artifactName": "NightPDF-${version}.${ext}",
@@ -70,15 +69,6 @@
 			"gatekeeperAssess": false,
 			"provisioningProfile": "./build/nightpdf.provisionprofile",
 			"type": "distribution"
-		},
-		"mas": {
-			"entitlements": "./build/entitlements.mas.plist",
-			"entitlementsInherit": "./build/entitlements.mas.inherit.plist",
-			"hardenedRuntime": true,
-			"asarUnpack": [
-				"node_modules"
-			],
-			"artifactName": "rocketchat-${version}-mas.${ext}"
 		}
 	}
 }

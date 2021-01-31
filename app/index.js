@@ -237,10 +237,10 @@ const nightPDF = (function () {
 
 		switch (preset) {
 			case 'default':
-				brightness.set(7);
-				grayness.set(95);
-				inversion.set(95);
-				sepia.set(55);
+				brightness.set(0);
+				grayness.set(0);
+				inversion.set(100);
+				sepia.set(0);
 				hue.set(180);
 				extraBrightness.set(0);
 				break;
@@ -277,7 +277,7 @@ const nightPDF = (function () {
 
 	const _setupSliders = () => {
 		noUiSlider.create(_brightnessSliderElement, {
-			start: 7,
+			start: 0,
 			step: 1,
 			connect: 'lower',
 			range: {
@@ -300,7 +300,7 @@ const nightPDF = (function () {
 		});
 
 		noUiSlider.create(_grayscaleSliderElement, {
-			start: 95,
+			start: 0,
 			step: 1,
 			connect: 'lower',
 			range: {
@@ -323,7 +323,7 @@ const nightPDF = (function () {
 		});
 
 		noUiSlider.create(_invertSliderElement, {
-			start: 95,
+			start: 100,
 			step: 1,
 			connect: 'lower',
 			range: {
@@ -346,7 +346,7 @@ const nightPDF = (function () {
 		});
 
 		noUiSlider.create(_sepiaSliderElement, {
-			start: 55,
+			start: 0,
 			step: 1,
 			connect: 'lower',
 			range: {
@@ -435,7 +435,7 @@ const nightPDF = (function () {
 		var style = document.createElement('style');
 		style.setAttribute('id', 'pageStyle');
 		style.textContent = 'div#viewer .page {';
-		style.textContent += 'filter: brightness(0.91) grayscale(0.95) invert(0.95) sepia(0.55) hue-rotate(180deg);';
+		style.textContent += 'filter: brightness(0) grayscale(0.00) invert(1.00) sepia(0.00) hue-rotate(180deg);';
 		style.textContent += 'border-image: none;';
 		style.textContent += '}';
 		_pdfElement.contentDocument.head.appendChild(style);

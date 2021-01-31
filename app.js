@@ -103,9 +103,9 @@ function createWindow(filename = null) {
 	ipcMain.removeAllListeners('resizeWindow');
 	ipcMain.once('resizeWindow', (e, msg) => {
 		const { width, height } = win.getBounds();
-		if (width < 1000 || height < 650) {
+		if (width < 1000 || height < 1300) {
 			win.setResizable(true);
-			win.setSize(1000, 650);
+			win.setSize(1000, 1300);
 			win.center();
 		}
 	});
