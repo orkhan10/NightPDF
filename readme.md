@@ -1,42 +1,9 @@
-# NightPDF
+Download Counts: https://tooomm.github.io/github-release-stats/?username=yueyericardo&repository=NightPDF
 
-Dark Mode PDF reader
+Update:
+- Change default color
+- Change the deault window size to (1000, 1300)
+- Add close window shortcut (`CMD` + `W`)
 
-It uses Electron but my eyes dont care.
-
-![NightPDF screencast](docs/nightpdf.gif?raw=true)
-
-## Download Binaries
-
-![NightPDF logo](docs/nightpdf_small.png?raw=true)
-
-Binaries for Mac OS X and Windows
-
-- [Latest release](https://github.com/joeloya/NightPDF/releases/latest)
-
-## Development
-
-### Requirements
-
-This software was developed using
-- node: 13.11.0
-- npm: 6.13.7
-- macOS Catalina 10.15.3
-
-## Instructions
-
-1. Install dependencies
-```bash
-npm install
-```
-2. Run
-```bash
-npm start
-```
-
-
-## Licenses
-
-- [NightPDF](https://github.com/joeloya/NightPDF) is under [WTFPL](LICENSE)
-- [Electron](https://github.com/electron/electron) is under [MIT](https://github.com/electron/electron/blob/master/LICENSE)
-- [PDF.js](https://mozilla.github.io/pdf.js/) is under [Apache License 2.0](https://github.com/mozilla/pdf.js/blob/master/LICENSE)
+Acknowledge: The code is adapted from the original repo: https://github.com/eleloya/NightPDF
+<img width="800" alt="Screen Shot 2021-01-31 at 4 12 41 PM" src="https://user-images.githubusercontent.com/9999318/106398145-297f5680-63df-11eb-92af-3969e63c3978.png">
