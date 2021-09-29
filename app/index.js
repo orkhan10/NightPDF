@@ -242,7 +242,7 @@ const nightPDF = (function () {
 				inversion.set(100);
 				sepia.set(0);
 				hue.set(0);
-				extraBrightness.set(-12);
+				extraBrightness.set(-6);
 				break;
 			case 'original':
 				brightness.set(0);
